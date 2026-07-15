@@ -1,1 +1,380 @@
+/* ===========================
+   Google Font
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#fdfbff,#efe8ff,#ffffff);
+    min-height:100vh;
+    overflow-x:hidden;
+    position:relative;
+}
+
+/* ===========================
+   Background Circle
+=========================== */
+
+.circle{
+    position:fixed;
+    border-radius:50%;
+    filter:blur(120px);
+    z-index:-1;
+}
+
+.one{
+    width:350px;
+    height:350px;
+    background:#b388ff;
+    top:-80px;
+    left:-80px;
+}
+
+.two{
+    width:300px;
+    height:300px;
+    background:#ffb6f2;
+    bottom:-80px;
+    right:-80px;
+}
+
+/* ===========================
+   Container
+=========================== */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+/* ===========================
+   Profile
+=========================== */
+
+.profile{
+    text-align:center;
+    margin-bottom:60px;
+
+    animation:fadeIn 1s;
+}
+
+.profile-img{
+
+    width:180px;
+    height:180px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:6px solid white;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.15);
+
+    transition:.4s;
+}
+
+.profile-img:hover{
+
+    transform:scale(1.08) rotate(3deg);
+
+    box-shadow:
+        0 20px 50px rgba(156,39,176,.4);
+
+}
+
+.profile h1{
+
+    margin-top:20px;
+
+    font-size:40px;
+
+    color:#6A1B9A;
+
+}
+
+.job{
+
+    margin-top:8px;
+
+    color:#777;
+
+    font-size:18px;
+
+}
+
+.about{
+
+    max-width:650px;
+
+    margin:20px auto;
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+/* ===========================
+   Social
+=========================== */
+
+.social{
+
+    margin-top:20px;
+
+}
+
+.social a{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:50px;
+
+    height:50px;
+
+    margin:10px;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:#7E57C2;
+
+    text-decoration:none;
+
+    font-size:22px;
+
+    transition:.3s;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.social a:hover{
+
+    transform:translateY(-8px);
+
+    background:#7E57C2;
+
+    color:white;
+
+    box-shadow:0 15px 35px rgba(126,87,194,.45);
+
+}
+
+/* ===========================
+   Song Section
+=========================== */
+
+.songs h2{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    color:#6A1B9A;
+
+    font-size:34px;
+
+}
+
+/* ===========================
+   Card Grid
+=========================== */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(240px,1fr));
+
+    gap:30px;
+
+}
+
+/* ===========================
+   Card
+=========================== */
+
+.card{
+
+    background:rgba(255,255,255,.72);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:
+
+    0 15px 30px rgba(0,0,0,.08);
+
+}
+
+.card:hover{
+
+    transform:
+    translateY(-12px)
+    scale(1.03);
+
+    box-shadow:
+
+    0 25px 50px rgba(156,39,176,.25);
+
+}
+
+/* ===========================
+   Song Image
+=========================== */
+
+.card img{
+
+    width:100%;
+
+    height:230px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================
+   Song Text
+=========================== */
+
+.card h3{
+
+    margin-top:18px;
+
+    color:#6A1B9A;
+
+}
+
+.card p{
+
+    color:#777;
+
+    margin:10px 0 20px;
+
+}
+
+/* ===========================
+   Button
+=========================== */
+
+.btn{
+
+    display:inline-block;
+
+    margin-bottom:25px;
+
+    padding:12px 28px;
+
+    border-radius:40px;
+
+    background:linear-gradient(
+    45deg,
+    #7E57C2,
+    #BA68C8);
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:
+
+    0 10px 25px rgba(126,87,194,.45);
+
+}
+
+/* ===========================
+   Animation
+=========================== */
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+.profile h1{
+
+font-size:32px;
+
+}
+
+.songs h2{
+
+font-size:28px;
+
+}
+
+.profile-img{
+
+width:150px;
+height:150px;
+
+}
+
+.card img{
+
+height:200px;
+
+}
+
+}
