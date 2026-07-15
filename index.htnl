@@ -1,1 +1,204 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midtrem 14</title>
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- พื้นหลังวงกลม -->
+    <div class="circle one"></div>
+    <div class="circle two"></div>
+
+    <!-- กล่องหลัก -->
+    <div class="container">
+
+        <!-- =======================
+             PROFILE
+        ======================== -->
+
+        <section class="profile">
+
+            <!-- เปลี่ยนรูปตรงนี้ -->
+            <img src="img/profile.jpg" class="profile-img">
+
+            <h1>Yanapat Tanwirat</h1>
+
+            <p class="job">
+                Student | Information Technology
+            </p>
+
+            <p class="about">
+                สวัสดีครับ 👋<br>
+                ผมชอบฟังเพลง เล่นเกม และเขียนเว็บไซต์ด้วย HTML CSS JavaScript
+            </p>
+
+            <!-- Social -->
+            <div class="social">
+
+                <!-- เปลี่ยนลิงก์ Facebook -->
+                <a href="https://www.facebook.com/yanapat.tanwirat.1" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <!-- เปลี่ยนลิงก์ Instagram -->
+                <a href="https://www.instagram.com/y4nxp4t._/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <!-- เปลี่ยนลิงก์ Github -->
+                <a href="https://github.com/" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <!-- เปลี่ยนลิงก์ Youtube -->
+                <a href="https://youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- =======================
+              TOP 5 SONGS
+        ======================== -->
+
+        <section class="songs">
+
+            <h2>🎵 My Top 5 Favorite Songs</h2>
+
+            <div class="cards">
+
+                <!-- Song 1 -->
+                <div class="card">
+
+                    <!-- เปลี่ยนรูปเพลง -->
+                    <img src="img/song1.jpg">
+
+                    <h3>ฤดู</h3>
+
+                    <p>Dept</p>
+
+                    <!-- เปลี่ยนลิงก์เพลง -->
+                    <a
+                        href="https://youtu.be/1AqQDVkm280?si=uLhPAwzGOpp9DXtf"
+                        target="_blank"
+                        class="btn">
+
+                        <i class="fa-solid fa-play"></i>
+
+                        ฟังเพลง
+
+                    </a>
+
+                </div>
+
+                <!-- Song 2 -->
+                <div class="card">
+
+                    <img src="img/song2.jpg">
+
+                    <h3>จารย์</h3>
+
+                    <p>Yedted</p>
+
+                    <a
+                        href="https://youtu.be/XCaJnbGVjSc?si=vIcyjDoRBMoeEh__"
+                        target="_blank"
+                        class="btn">
+
+                        <i class="fa-solid fa-play"></i>
+
+                        ฟังเพลง
+
+                    </a>
+
+                </div>
+
+                <!-- Song 3 -->
+                <div class="card">
+
+                    <img src="img/song3.jpg">
+
+                    <h3>Nothin no you</h3>
+
+                    <p>B.o.B</p>
+
+                    <a
+                        href="https://youtu.be/8PTDv_szmL0?si=izheeo2Q4IzV1O_F"
+                        target="_blank"
+                        class="btn">
+
+                        <i class="fa-solid fa-play"></i>
+
+                        ฟังเพลง
+
+                    </a>
+
+                </div>
+
+                <!-- Song 4 -->
+                <div class="card">
+
+                    <img src="img/song4.jpg">
+
+                    <h3>กรงทอง</h3>
+
+                    <p>Paradox</p>
+
+                    <a
+                        href="https://youtu.be/cKl7orKIUz8?si=jD3uQCeq05bUPYBR"
+                        target="_blank"
+                        class="btn">
+
+                        <i class="fa-solid fa-play"></i>
+
+                        ฟังเพลง
+
+                    </a>
+
+                </div>
+
+                <!-- Song 5 -->
+                <div class="card">
+
+                    <img src="img/song5.jpg">
+
+                    <h3>วิเศษ</h3>
+
+                    <p>Maxmillor</p>
+
+                    <a
+                        href="https://youtu.be/s4SplglfAps?si=Ib38qT_ATeFYsjIN"
+                        target="_blank"
+                        class="btn">
+
+                        <i class="fa-solid fa-play"></i>
+
+                        ฟังเพลง
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
